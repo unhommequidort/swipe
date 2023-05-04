@@ -342,3 +342,37 @@ main {
   width: 100%;
   box-shadow: var(--standard-box-shadow);
 }
+
+/* INTEGRATIONS SECTION STYLES */
+.integrations-section {
+  color: var(--text-light);
+  background-color: var(--primary-accent);
+}
+.integrations-section .primary-button {
+  background-color: var(--blue-1);
+  color: var(--primary-accent);
+  margin: var(--spacing-md) 0 0 0;
+}
+.integrations-section .primary-button:hover {
+  background-color: var(--bg-white);
+}
+.integrations-section .card-container {
+  display: flex;
+  margin: var(--spacing-lg) 0;
+}
+.integrations-section .card-container .card {
+  width: 50%;
+}
+.integrations-section .secondary-button {
+  color: var(--blue-1);
+}
+
+#api-code {
+  max-width: 29.375rem;
+  margin: 0 0 var(--spacing-md) 0;
+  border-radius: 1.25rem;
+}
+#terminal-code {
+  max-width: 29.375rem;
+  border-radius: 1.25rem;
+}
