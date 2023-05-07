@@ -756,6 +756,16 @@ main {
     width: 50%;
     margin: var(--spacing-md) 0;
   }
+
+  /* GLOBAL SECTION */
+  .global-section .card-container {
+    flex-wrap: wrap;
+    margin: var(--spacing-xl) 0;
+  }
+  .global-section .card-container .card {
+    width: 50%;
+    margin: var(--spacing-md) 0;
+  }
 }
 
 /* MOBILE SIZE */
@@ -788,6 +798,16 @@ main {
 
   .why-swipe-section .card-container .card .icon {
     height: 2.1875rem;
+  }
+
+  /* GLOBAL SECTION */
+  .global-section .card-container .card {
+    width: 100%;
+    margin: var(--spacing-sm) 0;
+  }
+
+  #globe {
+    opacity: 10%;
   }
 }
 
