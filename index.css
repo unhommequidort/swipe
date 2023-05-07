@@ -268,18 +268,9 @@ main {
 }
 
 /* ANIMATED GRADIENT */
-.gradient-container {
-  width: 100%;
-  overflow: hidden;
-  z-index: -2;
-  height: 600px;
-  top: 0;
-  position: absolute;
-}
 #gradient-canvas {
   width: 200%;
   height: 60.625rem;
-
   transform: rotate(-10deg);
   position: absolute;
   top: -37.5rem;
@@ -727,6 +718,13 @@ main {
     width: 100%;
     height: auto;
   }
+
+  .integrations-section .col-left {
+    width: 60%;
+  }
+  .integrations-section .col-right {
+    width: 40%;
+  }
 }
 
 /* TABLET SIZE */
@@ -735,13 +733,48 @@ main {
     --h1-size: 4rem;
     --h1-height: 4.5rem;
     --h3-size: 2.125rem;
+    --h6-size: 1rem;
+  }
+  /* UNIFIED PLATFORM */
+  .unified-platform-section h2 {
+    width: 100%;
+  }
+
+  /* INTEGRATIONS SECTION */
+  .integrations-section .card-container {
+    flex-direction: column;
+  }
+  .integrations-section .card-container .card {
+    width: 100%;
   }
 }
 
 /* MOBILE SIZE */
 @media only screen and (max-width: 34.375rem) {
+  .two-column {
+    flex-direction: column;
+  }
+  .two-column .col-left {
+    width: 100%;
+  }
+  .two-column .col-right {
+    width: 100%;
+    padding: 0;
+  }
   .partners-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  /* INTEGRATIONS SECTION */
+  .integrations-section .col-right {
+    display: none;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
