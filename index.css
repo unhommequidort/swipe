@@ -245,6 +245,7 @@ main {
   max-width: var(--standard-width);
   padding: 0 var(--spacing-md);
   margin: 0 0 var(--spacing-xl) 0;
+  box-sizing: border-box;
 }
 .menu {
   display: flex;
@@ -265,6 +266,9 @@ main {
 }
 .navbar-button:hover {
   background-color: rgba(250, 250, 250, 0.5);
+}
+.hamburger-button {
+  display: none;
 }
 
 /* ANIMATED GRADIENT */
@@ -766,6 +770,31 @@ main {
   /* NAVBAR STYLES */
   .navbar {
     margin: 0;
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+  .navbar button {
+    display: none;
+  }
+
+  .hamburger-button {
+    width: 3.125rem;
+    height: 1.875rem;
+    background-color: rgba(250, 250, 250, 0.25);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger-button .bar {
+    width: 1.125rem;
+    height: 0.125rem;
+    background-color: var(--bg-white);
+    margin: 1.5px;
   }
 
   /* HERO STYLES */
