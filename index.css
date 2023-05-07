@@ -747,6 +747,15 @@ main {
   .integrations-section .card-container .card {
     width: 100%;
   }
+
+  /* WHY SWIPE SECTION */
+  .why-swipe-section .card-container {
+    flex-wrap: wrap;
+  }
+  .why-swipe-section .card-container .card {
+    width: 50%;
+    margin: var(--spacing-md) 0;
+  }
 }
 
 /* MOBILE SIZE */
@@ -769,6 +778,16 @@ main {
   /* INTEGRATIONS SECTION */
   .integrations-section .col-right {
     display: none;
+  }
+
+  /* WHY SWIPE SECTION */
+  .why-swipe-section .card-container .card {
+    width: 100%;
+    margin: var(--spacing-sm) 0;
+  }
+
+  .why-swipe-section .card-container .card .icon {
+    height: 2.1875rem;
   }
 }
 
